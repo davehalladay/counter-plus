@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.support.v7.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        CardView counterCardView = (CardView) findViewById(R.id.counter_view);
+        counterCardView.setBackgroundColor(android.graphics.Color.GREEN);
+
     }
 
     @Override
