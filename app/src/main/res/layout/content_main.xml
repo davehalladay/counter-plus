@@ -19,11 +19,27 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        card_view:cardCornerRadius="6dp">
-        <TextView
-            android:id="@+id/counter_title"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="6dp">
+            <TextView
+                android:id="@+id/counter_title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/card_default_name"
+                android:textSize="40sp"
+                android:layout_alignParentTop="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:textSize="40sp"
+                android:text="@string/card_default_count"
+                android:id="@+id/counter_count"/>
+
+
 
     </android.support.v7.widget.CardView>
 </LinearLayout>
